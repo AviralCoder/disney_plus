@@ -1,13 +1,163 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+    background: rgb(0, 0, 0);
+}
+
+header {
+    position: sticky;
+    top: 20px;
+    margin-bottom: 10px;
+}
+
+nav {
+    display: flex;
+}
+
+nav p {
+    margin: 0 15px;
+    font-size: 1rem;
+    color: white;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+nav p:hover {
+    color: rgb(64, 172, 255);
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.flexbox {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    align-items: center;
+}
+
+.flexbox .left {
+    width: 50%;
+}
+
+.flexbox .left p {
+    margin: 20px 0;
+}
+
+.flexbox .left button {
+    background: rgb(8, 111, 213);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    border: 0;
+    border-radius: 2px;
+    font-size: 1.3rem;
+}
+
+.flexbox .left button:hover {
+    background: dodgerblue;
+}
+
+.flexbox .right img {
+    border-radius: 20px;
+}
+
+.center {
+    display: flex;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./assets/images/background.jpg");
+    background-size: cover;
+}
+
+.poster-bg {
+    background-image: url("./assets/images/background.jpg");
+    background-size: cover;
+}
+
+.login-container {
+    background: rgb(0, 0, 0);
+    padding: 40px;
+}
+
+.login-container input {
+    margin-top: 20px;
+    padding: 16px;
+    outline: 0;
+    font-size: 15px;
+    border: 0;
+    border-radius: 10px;
+    width: 100%;
+    background: rgb(255, 255, 255);
+}
+
+.login-container button {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    background: rgb(8, 111, 213);
+    color: white;
+    font-size: 1.3rem;
+    outline: 0;
+    border: 0;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background: dodgerblue;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .logo {
+    color: white;
+    font-size: 1.2rem;
+    margin-right: 20px;
+    background: rgb(87, 87, 87);
+    padding: 10px;
+    user-select: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    .useless {
+        display: none;
+    }
+
+    .flexbox {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flexbox .left {
+        width: 90%;
+        margin-top: 70px;
+    }
+
+    .flexbox .right img {
+        display: none;
+    }
+
+    header .logo {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
 }

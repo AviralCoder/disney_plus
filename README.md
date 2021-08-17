@@ -1,6 +1,29 @@
-# Getting Started with Create React App
+# Disney+ clone (new)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Technlogy used
+
+-   Javascript React
+    -   `useState`
+    -   `useEffect`
+    -   Context API for state management (`useContext`)
+    -   React Router (`npm i react-router-dom`)
+    -   Create-React-App for building the app (`npx create-react-app appname`)
+-   CSS
+
+## Contribute
+
+To contribute please raise a `pull request` or an `issue` in their respective tabs. You may mail me as well.
+
+## Try it out
+
+This is a React app and has been deployed to Vercel. To try it out by downloading it, follow these steps -
+
+-   Install Yarn or Node
+-   Download the repo
+-   Open your command line or terminal and run `cd <the path of the repo on your computer>`
+-   Run `yarn start` if you donwloaded Yarn and `npm start` if you downloadede Node. **Please don't open the index.html directly. You will see a blank page. To see the project, you need to run the commands**
+-   Your default browser will open on the port `localhost:3000` and you will be able to see the react app.
+-   For debugging components install the _React Dev Tools_ extension and inspect the webpage. You will be able to see the _Components_ tab. Click on it and you can debug the application
 
 ## Available Scripts
 
@@ -38,33 +61,3 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
