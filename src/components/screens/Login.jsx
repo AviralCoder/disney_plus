@@ -10,6 +10,7 @@ import {
     SetPasswordContext,
 } from "../../App";
 import { Center } from "../Layout";
+import Snack from "../Snack";
 
 const Login = () => {
     const setIsLoggedInContext = useContext(SetIsLoggedInContent);
@@ -20,6 +21,11 @@ const Login = () => {
     const setFName = useContext(SetFnameContext);
     const setLName = useContext(SetLnameContext);
     const setPassword = useContext(SetPasswordContext);
+
+    const [passwordText, setPasswordText] = useState(`Password: ...`);
+    const [buttonText, setButtonText] = useState("Show Password");
+    const [display, setDisplay] = useState("none");
+    const [snackText, setSnackText] = useState("");
 
     const onLoginClick = () => {
         if (fName !== "" && lName !== "" && password !== "") {
@@ -39,11 +45,20 @@ const Login = () => {
                     );
                 } else {
                     setIsLoggedInContext(true);
+                    setSnackText("Signed in");
+                    setDisplay("block");
+                    setTimeout(() => {
+                        setDisplay("none");
+                    }, 2500);
                 }
             }
         } else {
             alert("Please fill all the fields");
         }
+    };
+
+    const detailsStyle = {
+        color: "white",
     };
 
     return (
@@ -85,6 +100,22 @@ const Login = () => {
                     <div className="login-container">
                         <h1 style={{ color: "white" }}>You are logged in</h1>
 
+                        <p style={detailsStyle}>{`First Name: ${fName}`}</p>
+                        <p style={detailsStyle}>{`Last Name: ${lName}`}</p>
+                        <p style={detailsStyle}>{passwordText}</p>
+                        <button
+                            onClick={() => {
+                                if (buttonText === "Show Password") {
+                                    setPasswordText(`Password: ${password}`);
+                                    setButtonText("Hide Password");
+                                } else if (buttonText === "Hide Password") {
+                                    setPasswordText(`Password: ...`);
+                                    setButtonText("Show Password");
+                                }
+                            }}
+                        >
+                            {buttonText}
+                        </button>
                         <button
                             onClick={() => {
                                 if (
@@ -93,6 +124,11 @@ const Login = () => {
                                     )
                                 )
                                     setIsLoggedInContext(false);
+                                setSnackText("Logged out");
+                                setDisplay("block");
+                                setTimeout(() => {
+                                    setDisplay("none");
+                                }, 2500);
                             }}
                         >
                             Logout
@@ -100,6 +136,8 @@ const Login = () => {
                     </div>
                 )}
             </Center>
+
+            <Snack text={snackText} displayState={display} />
         </>
     );
 };

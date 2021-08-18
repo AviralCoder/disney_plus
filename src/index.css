@@ -6,7 +6,21 @@
 }
 
 body {
-    background: rgb(0, 0, 0);
+    background: url("./assets/images/home-background.png");
+}
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+img {
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 
 header {
@@ -124,16 +138,116 @@ header {
 header .logo {
     color: white;
     font-size: 1.2rem;
-    margin-right: 20px;
     background: rgb(87, 87, 87);
     padding: 10px;
     user-select: none;
     border-radius: 50%;
     display: flex;
     justify-content: center;
+    position: fixed;
     align-items: center;
     width: 50px;
+    top: 20px;
+    right: 20px;
     height: 50px;
+}
+
+.poster img {
+    width: 100%;
+    margin-top: 40px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%) scale(0.97);
+    transition: 0.5s ease;
+    border: 5px solid rgb(8, 8, 14);
+}
+
+.poster img:hover {
+    cursor: pointer;
+    border: 7px solid white;
+}
+
+.dots {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: gray;
+}
+
+.dot:hover {
+    cursor: pointer;
+    background: rgb(230, 230, 230);
+}
+
+.flexbox__ {
+    display: flex;
+    justify-content: center;
+}
+
+.margin {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+
+.company {
+    width: 75%;
+    transition: 0.1s ease-in;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 3px solid transparent;
+}
+
+.company:hover {
+    border: 3px solid white;
+    transform: scale(1.1);
+}
+
+.snack {
+    position: fixed;
+    transition: 0.4s ease;
+    padding: 15px;
+    border-radius: 20px;
+    background: rgb(3, 12, 40);
+    color: white;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    text-align: center;
+    opacity: 0;
+    animation-name: snack;
+    animation-iteration-count: 1;
+    animation-duration: 2.5s;
+}
+
+.snack h3 {
+    font-weight: 400;
+}
+
+@keyframes snack {
+    0% {
+        opacity: 0;
+        bottom: 0px;
+    }
+    50% {
+        opacity: 50%;
+        bottom: 40px;
+    }
+    70% {
+        opacity: 100%;
+        bottom: 40px;
+    }
+    100% {
+        opacity: 0;
+        bottom: 40px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -159,5 +273,27 @@ header .logo {
         width: 40px;
         height: 40px;
         font-size: 1rem;
+    }
+
+    .poster img {
+        border-width: 0px;
+    }
+
+    .poster img:hover {
+        border-width: 3px;
+    }
+
+    .flexbox__ {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .margin {
+        margin: 0;
+    }
+
+    .company {
+        width: 100%;
+        margin-top: 10px;
     }
 }

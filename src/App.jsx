@@ -20,7 +20,7 @@ const SetLnameContext = React.createContext();
 const SetPasswordContext = React.createContext();
 
 const App = () => {
-    const [isLoggedIn, setIsLoggedIn] = useState(false);
+    const [isLoggedIn, setIsLoggedIn] = useState(true);
     const [fName, setFName] = useState("");
     const [lName, setLName] = useState("");
     const [password, setPassword] = useState("");
