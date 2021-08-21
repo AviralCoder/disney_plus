@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useDebugValue } from "react";
 
 // Component imports
 import Navbar from "./components/Navbar";
@@ -7,8 +7,7 @@ import Home from "./components/screens/Home";
 import Search from "./components/screens/Search";
 import Default from "./components/screens/Default";
 import Login from "./components/screens/Login";
-
-//hooks import
+import { recommendations, originals, newToDisney, hit } from "./data/data";
 
 const IsLoggedInContext = React.createContext();
 const SetIsLoggedInContent = React.createContext();
@@ -24,6 +23,8 @@ const App = () => {
     const [fName, setFName] = useState("");
     const [lName, setLName] = useState("");
     const [password, setPassword] = useState("");
+
+    useDebugValue(isLoggedIn ? "Logged In" : "Logged out");
 
     useEffect(() => {
         try {
@@ -67,6 +68,98 @@ const App = () => {
                                                     <Navbar />
                                                     <Login />
                                                 </Route>
+
+                                                {recommendations.map((elem) => {
+                                                    const urlMovie =
+                                                        elem.name.replace(
+                                                            / /g,
+                                                            ""
+                                                        );
+
+                                                    return (
+                                                        <Route
+                                                            path={`/movies/${urlMovie}`}
+                                                        >
+                                                            <Navbar />
+                                                            <h1
+                                                                style={{
+                                                                    color: "white",
+                                                                }}
+                                                            >
+                                                                {elem.name}
+                                                            </h1>
+                                                        </Route>
+                                                    );
+                                                })}
+
+                                                {originals.map((elem) => {
+                                                    const urlMovie =
+                                                        elem.name.replace(
+                                                            / /g,
+                                                            ""
+                                                        );
+
+                                                    return (
+                                                        <Route
+                                                            path={`/movies/${urlMovie}`}
+                                                        >
+                                                            <Navbar />
+                                                            <h1
+                                                                style={{
+                                                                    color: "white",
+                                                                }}
+                                                            >
+                                                                {elem.name}
+                                                            </h1>
+                                                        </Route>
+                                                    );
+                                                })}
+
+                                                {newToDisney.map((elem) => {
+                                                    const urlMovie =
+                                                        elem.name.replace(
+                                                            / /g,
+                                                            ""
+                                                        );
+
+                                                    return (
+                                                        <Route
+                                                            path={`/movies/${urlMovie}`}
+                                                        >
+                                                            <Navbar />
+                                                            <h1
+                                                                style={{
+                                                                    color: "white",
+                                                                }}
+                                                            >
+                                                                {elem.name}
+                                                            </h1>
+                                                        </Route>
+                                                    );
+                                                })}
+
+                                                {hit.map((elem) => {
+                                                    const urlMovie =
+                                                        elem.name.replace(
+                                                            / /g,
+                                                            ""
+                                                        );
+
+                                                    return (
+                                                        <Route
+                                                            path={`/movies/${urlMovie}`}
+                                                        >
+                                                            <Navbar />
+                                                            <h1
+                                                                style={{
+                                                                    color: "white",
+                                                                }}
+                                                            >
+                                                                {elem.name}
+                                                            </h1>
+                                                        </Route>
+                                                    );
+                                                })}
                                             </Switch>
                                         </SetPasswordContext.Provider>
                                     </SetLnameContext.Provider>

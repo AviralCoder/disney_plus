@@ -108,9 +108,19 @@ const Login = () => {
                                 if (buttonText === "Show Password") {
                                     setPasswordText(`Password: ${password}`);
                                     setButtonText("Hide Password");
+                                    setSnackText("Password visible");
+                                    setDisplay("block");
+                                    setTimeout(() => {
+                                        setDisplay("none");
+                                    }, 2500);
                                 } else if (buttonText === "Hide Password") {
                                     setPasswordText(`Password: ...`);
                                     setButtonText("Show Password");
+                                    setSnackText("Password hidden");
+                                    setDisplay("block");
+                                    setTimeout(() => {
+                                        setDisplay("none");
+                                    }, 2500);
                                 }
                             }}
                         >
@@ -122,13 +132,14 @@ const Login = () => {
                                     window.confirm(
                                         "Are you sure you want to log out?"
                                     )
-                                )
+                                ) {
                                     setIsLoggedInContext(false);
-                                setSnackText("Logged out");
-                                setDisplay("block");
-                                setTimeout(() => {
-                                    setDisplay("none");
-                                }, 2500);
+                                    setSnackText("Logged out");
+                                    setDisplay("block");
+                                    setTimeout(() => {
+                                        setDisplay("none");
+                                    }, 2500);
+                                }
                             }}
                         >
                             Logout

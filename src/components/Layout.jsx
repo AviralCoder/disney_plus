@@ -21,6 +21,26 @@ export class Center extends React.Component {
 
 export class Flexbox extends React.Component {
     render() {
-        return <div className={"flexbox__"}>{this.props.children}</div>;
+        return (
+            <div className={"flexbox__"} style={this.props.style}>
+                {this.props.children}
+            </div>
+        );
+    }
+}
+
+export class Grid extends React.Component {
+    render() {
+        return (
+            <div className="grid" style={this.props.style}>
+                {this.props.children}
+            </div>
+        );
+    }
+}
+
+export class Container extends React.Component {
+    render() {
+        return <div className="container">{this.props.children}</div>;
     }
 }

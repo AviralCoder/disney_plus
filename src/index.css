@@ -7,6 +7,9 @@
 
 body {
     background: url("./assets/images/home-background.png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 html,
 body {
@@ -133,6 +136,7 @@ nav a {
 header {
     display: flex;
     justify-content: space-between;
+    z-index: 99999;
 }
 
 header .logo {
@@ -199,15 +203,17 @@ header .logo {
 
 .company {
     width: 75%;
-    transition: 0.1s ease-in;
+    transition: 0.2s ease-in;
     border-radius: 4px;
     cursor: pointer;
+    box-shadow: 0px 7px 40px 0px black;
+    border-radius: 10px;
     border: 3px solid transparent;
 }
 
 .company:hover {
     border: 3px solid white;
-    transform: scale(1.1);
+    transform: scale(1.07);
 }
 
 .snack {
@@ -229,6 +235,40 @@ header .logo {
 
 .snack h3 {
     font-weight: 400;
+}
+
+.container {
+    margin: 30px;
+}
+
+.movie img {
+    border: 3px solid rgb(24, 32, 45);
+    border-radius: 10px;
+    transition: 0.5s ease;
+}
+
+.movie {
+    position: relative;
+}
+
+.movie p {
+    position: absolute;
+    left: 50%;
+    color: white;
+    font-size: 1.1rem;
+    bottom: 10px;
+    transform: translateX(-50%);
+}
+
+.movie img:hover {
+    border: 3px solid white;
+    cursor: pointer;
+    transform: scale(1.07);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 @keyframes snack {
@@ -295,5 +335,13 @@ header .logo {
     .company {
         width: 100%;
         margin-top: 10px;
+    }
+
+    .movie {
+        margin-top: 20px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
