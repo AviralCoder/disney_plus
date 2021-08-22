@@ -212,7 +212,7 @@ header .logo {
 }
 
 .company:hover {
-    border: 3px solid white;
+    border: 3px solid aqua;
     transform: scale(1.07);
 }
 
