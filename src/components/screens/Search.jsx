@@ -16,6 +16,7 @@ const Search = () => {
                 <input
                     type="text"
                     value={searchValue}
+                    placeholder="Type here...."
                     onChange={(e) => {
                         setSearchValue(e.target.value);
                     }}
