@@ -1,5 +1,7 @@
 # Disney+ clone (new)
 
+[Try it out on Vercel!](https://disney-plus-aviralcoder.vercel.app/)
+
 ## Technlogy used
 
 -   Javascript React
