@@ -13,6 +13,17 @@
 -   CSS
 -   Vercel (for deployment)
 
+## Features
+
+- Totally responsive
+- Fake login thingy
+- CSS Grid
+- CSS Flexbox
+- React JS
+- React Router (`yarn add react-router-dom`)
+- useContext, useState, useEffect hooks
+- Yarn for packages (not npm)
+
 ## Contribute
 
 To contribute please raise a `pull request` or an `issue` in their respective tabs. You may mail me as well.
