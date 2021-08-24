@@ -9,6 +9,7 @@
     -   React Router (`npm i react-router-dom`)
     -   Create-React-App for building the app (`npx create-react-app appname`)
 -   CSS
+-   Vercel (for deployment)
 
 ## Contribute
 
