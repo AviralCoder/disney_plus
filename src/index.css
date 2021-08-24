@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800");
+
 * {
     margin: 0;
     padding: 0;
@@ -271,6 +273,57 @@ header .logo {
     grid-template-columns: repeat(4, 1fr);
 }
 
+.movie-page-button {
+    background: white;
+    padding: 10px;
+    color: black;
+    border-radius: 10px;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    transition: 0.3s ease;
+}
+
+.movie-page-button:hover {
+    background: black;
+    color: white;
+}
+
+.search-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.search-screen input {
+    width: 83%;
+    padding: 10px;
+    border: 0;
+    border-radius: 10px;
+    outline: 0;
+    margin-left: 10px;
+}
+
+.search-screen button {
+    width: 17%;
+    margin-right: 10px;
+    padding: 10px;
+    border: 0;
+    margin-left: 10px;
+    cursor: pointer;
+    background: white;
+    border-radius: 10px;
+    outline: 0;
+}
+
+.search-screen input,
+.search-screen button {
+    font-size: 3rem;
+}
+
 @keyframes snack {
     0% {
         opacity: 0;
@@ -343,5 +396,36 @@ header .logo {
 
     .grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .movie_page {
+        margin: 10px;
+    }
+
+    .movie_page .left {
+        text-align: center;
+        width: 90% !important;
+    }
+
+    .search-screen {
+        margin: 0 20px;
+        flex-direction: column;
+    }
+
+    .movie-page-button {
+        margin-top: 10px;
+    }
+
+    .search-screen input {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .search-screen button {
+        width: 100%;
+        margin-top: 10px;
+        margin-left: 0;
+        margin-right: 0;
     }
 }

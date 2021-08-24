@@ -10,8 +10,6 @@ import StarWars from "../assets/images/star wars imaeg.webp";
 import NationalGeographic from "../assets/images/national georgaphic.webp";
 
 const Companies = () => {
-
-
     return (
         <div className="margin">
             <Flexbox>

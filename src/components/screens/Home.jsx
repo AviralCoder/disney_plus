@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import { IsLoggedInContext } from "../../App";
 
 import Poster from "../Poster";
@@ -35,7 +35,7 @@ const Home = () => {
                         const urlMovie = elem.name.replace(/ /g, "");
 
                         return (
-                            <Link to={`/movies/${urlMovie}`}>
+                            <Link to={`/movies/${urlMovie}`} key={elem.name}>
                                 <Movie
                                     imgSrc={elem.image}
                                     movieName={elem.name}
@@ -52,7 +52,7 @@ const Home = () => {
                         const urlMovie = elem.name.replace(/ /g, "");
 
                         return (
-                            <Link to={`/movies/${urlMovie}`}>
+                            <Link to={`/movies/${urlMovie}`} key={elem.name}>
                                 <Movie
                                     imgSrc={elem.image}
                                     movieName={elem.name}
@@ -69,7 +69,7 @@ const Home = () => {
                         const urlMovie = elem.name.replace(/ /g, "");
 
                         return (
-                            <Link to={`/movies/${urlMovie}`}>
+                            <Link to={`/movies/${urlMovie}`} key={elem.name}>
                                 <Movie
                                     imgSrc={elem.image}
                                     movieName={elem.name}
@@ -86,7 +86,7 @@ const Home = () => {
                         const urlMovie = elem.name.replace(/ /g, "");
 
                         return (
-                            <Link to={`/movies/${urlMovie}`}>
+                            <Link to={`/movies/${urlMovie}`} key={elem.name}>
                                 <Movie
                                     imgSrc={elem.image}
                                     movieName={elem.name}

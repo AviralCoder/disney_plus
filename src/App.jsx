@@ -21,7 +21,7 @@ const SetLnameContext = React.createContext();
 const SetPasswordContext = React.createContext();
 
 const App = () => {
-    const [isLoggedIn, setIsLoggedIn] = useState(true);
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
     const [fName, setFName] = useState("");
     const [lName, setLName] = useState("");
     const [password, setPassword] = useState("");
@@ -81,6 +81,7 @@ const App = () => {
                                                     return (
                                                         <Route
                                                             path={`/movies/${urlMovie}`}
+                                                            key={elem.name}
                                                         >
                                                             <Navbar />
                                                             <MovieScreen
@@ -88,6 +89,13 @@ const App = () => {
                                                                     elem.image
                                                                 }
                                                                 name={elem.name}
+                                                                genres={
+                                                                    elem.genres
+                                                                }
+                                                                about={
+                                                                    elem.description
+                                                                }
+                                                                year={elem.year}
                                                             />
                                                         </Route>
                                                     );
@@ -103,9 +111,22 @@ const App = () => {
                                                     return (
                                                         <Route
                                                             path={`/movies/${urlMovie}`}
+                                                            key={elem.name}
                                                         >
                                                             <Navbar />
-                                                            <MovieScreen />
+                                                            <MovieScreen
+                                                                poster={
+                                                                    elem.image
+                                                                }
+                                                                name={elem.name}
+                                                                genres={
+                                                                    elem.genres
+                                                                }
+                                                                about={
+                                                                    elem.description
+                                                                }
+                                                                year={elem.year}
+                                                            />
                                                         </Route>
                                                     );
                                                 })}
@@ -120,15 +141,22 @@ const App = () => {
                                                     return (
                                                         <Route
                                                             path={`/movies/${urlMovie}`}
+                                                            key={elem.name}
                                                         >
                                                             <Navbar />
-                                                            <h1
-                                                                style={{
-                                                                    color: "white",
-                                                                }}
-                                                            >
-                                                                {elem.name}
-                                                            </h1>
+                                                            <MovieScreen
+                                                                poster={
+                                                                    elem.image
+                                                                }
+                                                                name={elem.name}
+                                                                genres={
+                                                                    elem.genres
+                                                                }
+                                                                about={
+                                                                    elem.description
+                                                                }
+                                                                year={elem.year}
+                                                            />
                                                         </Route>
                                                     );
                                                 })}
@@ -143,15 +171,22 @@ const App = () => {
                                                     return (
                                                         <Route
                                                             path={`/movies/${urlMovie}`}
+                                                            key={elem.name}
                                                         >
                                                             <Navbar />
-                                                            <h1
-                                                                style={{
-                                                                    color: "white",
-                                                                }}
-                                                            >
-                                                                {elem.name}
-                                                            </h1>
+                                                            <MovieScreen
+                                                                poster={
+                                                                    elem.image
+                                                                }
+                                                                name={elem.name}
+                                                                genres={
+                                                                    elem.genres
+                                                                }
+                                                                about={
+                                                                    elem.description
+                                                                }
+                                                                year={elem.year}
+                                                            />
                                                         </Route>
                                                     );
                                                 })}
