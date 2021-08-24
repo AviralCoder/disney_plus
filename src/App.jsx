@@ -8,7 +8,9 @@ import Search from "./components/screens/Search";
 import Default from "./components/screens/Default";
 import Login from "./components/screens/Login";
 import { recommendations, originals, newToDisney, hit } from "./data/data";
+import MovieScreen from "./components/MovieScreen";
 
+//! a lot of contexts
 const IsLoggedInContext = React.createContext();
 const SetIsLoggedInContent = React.createContext();
 const FnameContext = React.createContext();
@@ -81,13 +83,12 @@ const App = () => {
                                                             path={`/movies/${urlMovie}`}
                                                         >
                                                             <Navbar />
-                                                            <h1
-                                                                style={{
-                                                                    color: "white",
-                                                                }}
-                                                            >
-                                                                {elem.name}
-                                                            </h1>
+                                                            <MovieScreen
+                                                                poster={
+                                                                    elem.image
+                                                                }
+                                                                name={elem.name}
+                                                            />
                                                         </Route>
                                                     );
                                                 })}
@@ -104,13 +105,7 @@ const App = () => {
                                                             path={`/movies/${urlMovie}`}
                                                         >
                                                             <Navbar />
-                                                            <h1
-                                                                style={{
-                                                                    color: "white",
-                                                                }}
-                                                            >
-                                                                {elem.name}
-                                                            </h1>
+                                                            <MovieScreen />
                                                         </Route>
                                                     );
                                                 })}
