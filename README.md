@@ -1,4 +1,4 @@
-# Disney+ clone (new)
+# Disney+ clone
 
 [Try it out on Vercel!](https://disney-plus-aviralcoder.vercel.app/)
 
@@ -10,8 +10,8 @@
     -   Context API for state management (`useContext`)
     -   React Router (`npm i react-router-dom`)
     -   Create-React-App for building the app (`npx create-react-app appname`)
--   CSS
--   Vercel (for deployment)
+-   CSS (no library used 😎)
+-   Vercel and Github (for deployment)
 
 ## Features
 
