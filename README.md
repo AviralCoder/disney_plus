@@ -39,6 +39,10 @@ This is a React app and has been deployed to Vercel. To try it out by downloadin
 -   Your default browser will open on the port `localhost:3000` and you will be able to see the react app.
 -   For debugging components install the _React Dev Tools_ extension and inspect the webpage. You will be able to see the _Components_ tab. Click on it and you can debug the application
 
+## Demo Video
+
+https://player.vimeo.com/video/629327375?h=2f68048d6a&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479
+
 ## Available Scripts
 
 In the project directory, you can run:
