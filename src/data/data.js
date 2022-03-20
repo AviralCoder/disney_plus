@@ -24,11 +24,11 @@ const recommendations = [
         year: 2021,
     },
     {
-        name: "Falcon and the Winter Soldier",
-        image: "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/B2AA7564120107315F561005D0B8A3ED9FE5609D52EBCD4B5F5E540605C00F9B/badging?width=400&aspectRatio=1.78&format=jpeg&label=disneyplusoriginal",
-        genres: ["Action Fiction", "Comedy", "Superhero fiction"],
+        name: "Eternals",
+        image: "https://ichef.bbci.co.uk/news/400/cpsprodpb/685C/production/_118661762_e2j7vq5veaq-2jg.jpg",
+        genres: ["Action Fiction", "Fantasy", "Superhero fiction"],
         description:
-            "Following the events of “Avengers: Endgame,” Sam Wilson and Bucky Barnes team up in a global adventure that tests their abilities and their patience.",
+            "The Eternals, a race of immortal beings with superhuman powers who have secretly lived on Earth for thousands of years, reunite to battle the evil Deviants.",
         year: 2021,
     },
 ];
@@ -86,12 +86,12 @@ const newToDisney = [
         year: `2018-2021`,
     },
     {
-        name: "Soul",
-        image: "https://bloximages.chicago2.vip.townnews.com/swoknews.com/content/tncms/assets/v3/editorial/e/59/e59dd593-9201-5c8c-af51-be62edd9c492/5ffa6ee05f565.image.jpg?resize=400%2C225",
-        genres: ["Kids", "Comedy"],
+        name: "The Mandalorian",
+        image: "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/D3272A46C21A5DF3EA7E68595AD2E703EF471A733C5D979261C7DAC7738587E5/badging?width=400&aspectRatio=1.78&format=jpeg&label=disneyplusoriginal",
+        genres: ["Space Western", "Adventure Fiction"],
         description:
-            "After a small misstep, Joe is transported to The Great Before and must find his way back with the help of an infant soul learning about herself.",
-        year: 2020,
+            "After the defeat of the Empire at the hands of Rebel forces, a lone bounty hunter operating in the Outer Rim, away from the dominion of the New Republic, goes on many surprising and risky adventures.",
+        year: 2019,
     },
     {
         name: "Turning Red",
@@ -121,12 +121,12 @@ const hit = [
         year: `2022`,
     },
     {
-        name: "Spider Man - Far From Home",
-        image: "https://cdn.wrytin.com/images/thumbnail/r/400/960x0-jyb1ysv8.jpeg",
-        genres: ["Superhero", "Comedy", "Teen"],
+        name: "Rudra: The Edge of Darkness",
+        image: "https://resize.indiatv.in/centered/newbucket/400_225/2022/02/rudra-1644761119.jpg",
+        genres: ["Crime", "Psychological Thriller"],
         description:
-            "Peter Parker, the beloved superhero Spider-Man, faces four destructive elemental monsters while on holiday in Europe. Soon, he receives help from Mysterio, a fellow hero with mysterious origins.",
-        year: 2019,
+            "Rudra: The Edge of Darkness is an Indian psychological crime thriller streaming television series, created for Disney+ Hotstar. It's a remake of British series Luther. The series stars Ajay Devgn, Raashi Khanna and Esha Deol.",
+        year: `2022`,
     },
     {
         name: "Chhichhore",
