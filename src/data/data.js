@@ -113,12 +113,12 @@ const hit = [
         year: 2019,
     },
     {
-        name: "Mulan",
-        image: "https://images-eu.ssl-images-amazon.com/images/S/sgp-catalog-images/region_GB/disney-12767_OV_UHD-Full-Image_GalleryCover-en-GB-1605012205482._UR1920,1080_RI_UX400_UY225_.jpg",
-        genres: ["Drama", "Action", "Family"],
+        name: "The Batman",
+        image: "https://static.digit.in/OTT/v2/images/tr:w-400/the-batman-669919.jpg",
+        genres: ["Crime", "Action", "Mystery"],
         description:
-            "Masquerading as a male soldier to protect her father and tested every step of the way, Mulan must harness her inner-strength and embrace her true potential.",
-        year: `2020`,
+            "Batman ventures into Gotham City's underworld when a sadistic killer leaves behind a trail of cryptic clues. As the evidence begins to lead closer to home and the scale of the perpetrator's plans become clear, he must forge new relationships, unmask the culprit and bring justice to the abuse of power and corruption that has long plagued the metropolis.",
+        year: `2022`,
     },
     {
         name: "Spider Man - Far From Home",
