@@ -98,7 +98,7 @@ const newToDisney = [
         image: "https://bloximages.newyork1.vip.townnews.com/lsureveille.com/content/tncms/assets/v3/editorial/8/8f/88fa905e-a6ee-11ec-9587-9f463f4095fb/6234d871644b8.image.jpg?resize=400%2C225",
         genres: ["Family", "Animation"],
         description:
-            "Mei Lee is a 13-year-old girl who is torn between being her mother's obedient daughter and the chaos of her youth. As if that were not enough, when she gets too excited, she turns into a big red panda.,
+            "Mei Lee is a 13-year-old girl who is torn between being her mother's obedient daughter and the chaos of her youth. As if that were not enough, when she gets too excited, she turns into a big red panda.",
         year: `2022`,
     },
 ];
