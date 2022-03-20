@@ -78,12 +78,12 @@ const newToDisney = [
         year: 2021,
     },
     {
-        name: "Wicked Tuna",
-        image: "https://cfm.yidio.com/images/tv/19095/1481944/episode-image-400x225.jpg",
-        genres: ["Drama", "Reality Telivision"],
+        name: "She Builds",
+        image: "https://i.ibb.co/F7fS845/she-builds.png",
+        genres: ["Documentary", "Reality"],
         description:
-            "In one of the most regulated fisheries on earth, the giant Bluefin tuna fishermen of Gloucester battle to make a living by catching one tuna at a time.",
-        year: `2018-2021`,
+            "She Builds unravels the powerful stories of female founders who have redefined what it is to be a woman and an entrepreneur in 21st century India.",
+        year: `2022`,
     },
     {
         name: "The Mandalorian",
@@ -121,12 +121,12 @@ const hit = [
         year: `2022`,
     },
     {
-        name: "Rudra: The Edge of Darkness",
-        image: "https://resize.indiatv.in/centered/newbucket/400_225/2022/02/rudra-1644761119.jpg",
-        genres: ["Crime", "Psychological Thriller"],
+        name: "Shang-Chi and the Legend of the Ten Rings",
+        image: "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/CB8286740ECBC21E64FAEC18762152C8D8DB0877B06F7B3C3A05D0CEBC0B3615/scale?width=400&aspectRatio=1.78&format=jpeg",
+        genres: ["Fantasy", "Action"],
         description:
-            "Rudra: The Edge of Darkness is an Indian psychological crime thriller streaming television series, created for Disney+ Hotstar. It's a remake of British series Luther. The series stars Ajay Devgn, Raashi Khanna and Esha Deol.",
-        year: `2022`,
+            "Martial-arts master Shang-Chi confronts the past he thought he left behind when he's drawn into the web of the mysterious Ten Rings organization.",
+        year: `2021`,
     },
     {
         name: "Chhichhore",
