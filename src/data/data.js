@@ -94,12 +94,12 @@ const newToDisney = [
         year: 2020,
     },
     {
-        name: "Zenimation",
-        image: "https://bloximages.newyork1.vip.townnews.com/kmov.com/content/tncms/assets/v3/editorial/a/9b/a9b8a024-a81b-5fa1-9af0-95fc34251679/5ec7a9f1382a0.image.jpg?resize=400%2C225",
+        name: "Turning Red",
+        image: "https://bloximages.newyork1.vip.townnews.com/lsureveille.com/content/tncms/assets/v3/editorial/8/8f/88fa905e-a6ee-11ec-9587-9f463f4095fb/6234d871644b8.image.jpg?resize=400%2C225",
         genres: ["Family", "Animation"],
         description:
-            "Zenimation pays tribute to both the visual and sound artists who have created Walt Disney Animation Studios’ legacy of films.",
-        year: `2020-2021`,
+            "Mei Lee is a 13-year-old girl who is torn between being her mother's obedient daughter and the chaos of her youth. As if that were not enough, when she gets too excited, she turns into a big red panda.,
+        year: `2022`,
     },
 ];
 
